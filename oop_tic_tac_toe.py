@@ -112,7 +112,7 @@ class Board:
         else:
             print("This position is already taken. Please enter another one.")
 
-        def check_is_game_over(self, player, last_move):
+    def check_is_game_over(self, player, last_move):
         return ((self.check_row(player, last_move))
                 or (self.check_column(player, last_move))
                 or (self.check_diagonal(player))
